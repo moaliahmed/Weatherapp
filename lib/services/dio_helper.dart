@@ -1,18 +1,18 @@
 import 'package:dio/dio.dart';
+import 'package:weatherapp/services/dio_helper_keys.dart';
 
 class DioHelper {
 
-  static Dio? dio;
-
+  static  Dio? dio;
+ static const  String baseUrl='https://api.openweathermap.org/data/2.5/';
   static init(){
     dio=Dio(
         BaseOptions(
-          baseUrl: 'https://medicalapp.eraasoft.com/api/',
+          baseUrl: baseUrl,
           receiveDataWhenStatusError: true,
         )
     );
   }
-
   static Future<Response> getData({
     required String url,
     Map<String,dynamic> ?query,
@@ -20,6 +20,7 @@ class DioHelper {
   async {
     return await dio!.get(url,queryParameters:query );
   }
+
 
 
 

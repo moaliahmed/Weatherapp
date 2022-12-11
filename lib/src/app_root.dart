@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weatherapp/blocs/cubit/weather_cubit.dart';
 import 'package:weatherapp/screens/home_screen.dart';
-import 'package:weatherapp/screens/search_screen.dart';
+import 'package:weatherapp/screens/weather_Degree.dart';
 
 
 class AppRoot extends StatelessWidget {
@@ -18,6 +18,7 @@ class AppRoot extends StatelessWidget {
           ),
         ],
         child: MaterialApp(
+          theme: ThemeData() ,
           home: HomeScreen(),
           debugShowCheckedModeBanner: false,
         ));
