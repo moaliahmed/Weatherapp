@@ -1,3 +1,3 @@
 class apikey{
-  static String weatherkey='8f7c666b5cf89aad214338e6f7d04dd5';
+  static String weatherkey='c37e85013ce83fd6818febbb3f32999f';
 }
